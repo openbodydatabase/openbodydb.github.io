@@ -57,7 +57,7 @@
             
               <article id="contact">
   <h1>Subscribe for updates</h1>
-  <p><form id="contactform" method="post" action="https://formspree.io/contact@obdb.org">
+  <form id="contactform" method="post" action="https://formspree.io/contact@obdb.org">
     <div class="field half first">
         <input type="text" name="name" id="name" placeholder="Name"/>
     </div>
@@ -68,16 +68,15 @@
         <li><input type="submit" value="Send message" class="special" /></li>
         <li><input type="reset" value="Reset" /></li>
     </ul>
-    <input type="hidden" name="_next" value="#thankyou" />
+    <input type="hidden" name="_next" value="#contact" />
     <input type="hidden" name="_subject" value="Contact form entry" />
     <input type="text" name="_gotcha" style="display:none" />
 </form>
-<span id="contact sent">Thank you for your message</span></p>
 
 <script>
 $(document).ready(function($) {
     $(function(){
-        if (window.location.search == "#thankyou") {
+        if (window.location.search == "#contact") {
             $('#contactform').hide();
             $('#contactformsent').show();
         } else {
