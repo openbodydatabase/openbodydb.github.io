@@ -35,9 +35,15 @@
             <nav>
               <ul>
                 
+                
                   <li><a href="#intro">About</a></li>
                 
+                
+                
                   <li><a href="#contact">Subscribe</a></li>
+                
+                
+                
                 
               </ul>
             </nav>
@@ -68,7 +74,7 @@
         <li><input type="submit" value="Send message" class="special" /></li>
         <li><input type="reset" value="Reset" /></li>
     </ul>
-    <input type="hidden" name="_next" value="#contact" />
+    <input type="hidden" name="_next" value="#thankyou" />
     <input type="hidden" name="_subject" value="Contact form entry" />
     <input type="text" name="_gotcha" style="display:none" />
 </form>
@@ -76,7 +82,7 @@
 <script>
 $(document).ready(function($) {
     $(function(){
-        if (window.location.search == "#contact") {
+        if (window.location.search == "#thankyou") {
             $('#contactform').hide();
             $('#contactformsent').show();
         } else {
@@ -85,6 +91,13 @@ $(document).ready(function($) {
     });
 });
 </script>
+
+</article>
+
+            
+              <article id="thankyou">
+  <h1>Thank You!</h1>
+  <p>We&rsquo;ll get back to you shortly.</p>
 
 </article>
 

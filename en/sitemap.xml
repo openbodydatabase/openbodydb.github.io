@@ -11,6 +11,10 @@
   </url>
   
   <url>
+    <loc>http://example.org/#thankyou</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/#</loc>
     <priority>0</priority>
   </url>
